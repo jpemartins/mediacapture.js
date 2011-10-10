@@ -1,7 +1,8 @@
+# HTML5 Media Capture API Polyfill
 
-# mediacapture
+Currently implements the [Device API](http://www.w3.org/TR/media-capture-api/) and [forms handling](http://www.w3.org/TR/html-media-capture/).
 
-  HTML5 Media Capture Polyfill
+These features are currently available in the [IE9 prototype](http://blogs.msdn.com/b/interoperability/archive/2011/06/07/new-media-capture-audio-prototype-released.aspx) and Firefox (mobile) 9.
 
 ## License 
 
