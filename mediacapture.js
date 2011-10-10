@@ -89,7 +89,7 @@
 		flashWrapper: null,
 		flashElement: null,
 		
-		swf: "/MediaCapture.swf"
+		swf: "MediaCapture.swf"
 	}
 
 	//dev.load();
@@ -99,7 +99,7 @@
 			stylesheet: (function(){
 				var link = document.createElement("link");
 				link.setAttribute("rel", "stylesheet");
-				link.setAttribute("href", "/mediacapture.css");
+				link.setAttribute("href", "mediacapture.css");
 				link.setAttribute("id", "mc-style");
 				document.head.appendChild(link);
 				return link;
