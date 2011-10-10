@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>HTML5 Media Capture Polyfill</title>
+		<meta name="description" content="Media Capture Polyfill">
+        <meta name="author" content="Joao Martins">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	 	<style>
+			input {
+				display: block;
+			}
+
+			form > p {
+				background: rgba(200, 200, 200, 0.6);
+				border-top: 1px solid #1e1e1e;
+				padding: 10px;
+				margin-bottom: 10px;
+			}
+
+			form > p > label {
+				font-size: 14px;
+				font-weight: bold;
+				font-family: Helvetica, Arial;				
+			}
+		</style>	
+	</head>
+
+	<body>
+		<form>
+		<p>
+			<label for="input-1">Image (PNG) Capture</label>
+			<input id="input-1" type="file" accept="image/png" capture="camera" />
+		</p>
+		
+		
+		<p>
+			<label for="input-2">Image (JPEG) Capture</label>
+			<input id="input-2" type="file" accept="image/jpeg" capture="camera" />
+		</p>
+		</form>
+
+		<form>
+		<p>
+			<label for="input-3">Sound (WAV) Capture</label>		
+			<input id="input-3" type="file" accept="audio/wav" capture="microphone" />
+		</p>
+
+		</form>
+
+		<script src="lib/swfobject.js"></script>
+		<script src="mediacapture.js"></script>
+	</body>
+</html>

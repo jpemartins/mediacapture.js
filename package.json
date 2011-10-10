@@ -1,0 +1,15 @@
+{
+    "name": "mediacapture"
+  , "version": "0.0.1"
+  , "description": "HTML5 Media Capture Polyfill"
+  , "keywords": []
+  , "author": "João Martins <madjackoo@gmail.com>"
+  , "private": true
+  , "dependencies": {
+	  "node-static": "latest"
+	, "ngen" : "latest"
+	, "uglify-js": "latest"
+  }
+  , "main": "index"
+  , "engines": { "node": "0.4.x" }
+}
