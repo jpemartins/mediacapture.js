@@ -19,8 +19,8 @@
   text-align: right;
   position: relative;
   height: 20px;
-  width: 20px;
-  float: right;
+  width: inherit;
+  /*float: right;*/
   margin-right: 5px;
 }
 

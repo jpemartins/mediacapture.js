@@ -140,11 +140,13 @@
 
         show: function (captureCb, stopCb) {
             dev.flashWrapper.style.visibility = "visible";
-            var menu = dev.flashWrapper.querySelector(".mc-menu"), captureBtn, stopBtn;
+            var menu = dev.flashWrapper.querySelector(".mc-menu"), 
+                closeBtn = dev.flashWrapper.querySelector(".mc-close-button"),
+                self = this, captureBtn, stopBtn, closeBtn;
             
             menu.innerHTML = "<button class='mc-button mc-capture'>Capture</button><button class='mc-button mc-stop'>Stop</button>";
             captureBtn = menu.querySelector(".mc-capture");
-            stopBtn = menu.querySelector(".mc-stop");
+            stopBtn = menu.querySelector(".mc-stop");            
 
 
             captureBtn.style.display = ui.css.show;
@@ -156,6 +158,10 @@
 
             stopBtn.addEventListener("click", function (event) {
                 stopCb();
+            }, false);
+
+            closeBtn.addEventListener("click", function (event) {
+                self.hide();
             }, false);
 
             ui.menu = menu;
@@ -425,6 +431,7 @@
             return false;
         }
     }
+
     var elements = document.querySelectorAll("input[type='file'][accept][capture]"), i; // File inputs with capture
     for (i = 0; i < elements.length; i++) {
         elements[i].addEventListener("click", inputCaptureCB, false);
