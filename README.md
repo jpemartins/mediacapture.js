@@ -1,7 +1,7 @@
-
 # mediacapture
 
   HTML5 Media Capture Polyfill
+
 
 ## License 
 
